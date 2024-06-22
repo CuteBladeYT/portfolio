@@ -1,0 +1,64 @@
+:root {
+    --topnav-height: 64px;
+    --topnav-border-width: 3px;
+
+    --nav-button-width: 96px;
+}
+
+body > div#topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--topnav-height);
+
+    background-color: var(--color-bg-dark);
+    border-bottom: var(--color-accent) var(--topnav-border-width) solid;
+}
+
+body > div#topnav > div#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 0px;
+    margin: 0px;
+
+    width: calc(var(--nav-button-width) * 5);
+}
+body > div#topnav > div#nav > button {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: calc(var(--nav-button-width) - 4px);
+    height: var(--topnav-height);
+    margin: 0px;
+
+    border: none;
+    background-color: transparent;
+}
+body > div#topnav > div#nav > button:hover {
+    background-color: var(--color-hover);
+}
+body > div#topnav > div#nav > button.active {
+    background-color: var(--color-accent);
+}
+
+body > div#topnav > div#nav > button > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 500%;
+
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+}
+body > div#topnav > div#nav > button:hover > a,
+body > div#topnav > div#nav > button.active > a {
+    color: var(--color-bg-dark);
+    font-weight: bold;
+}

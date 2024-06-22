@@ -1,0 +1,82 @@
+@font-face {
+    font-family: main;
+    src: url(./comfortaa.ttf);
+}
+@font-face {
+    font-family: code;
+    src: url(./kodemono.ttf);
+}
+@font-face {
+    font-family: glitch;
+    src: url(./rubikglitch.ttf);
+}
+@font-face {
+    font-family: hw;
+    src: url(./kaushanscript.ttf);
+}
+
+:root {
+    --color-accent: #a6e3a1;
+    
+    --color-text: #cdd6f4;
+    --color-subtext: #6c7086;
+    --color-hover: #cba6f7;
+
+    --color-warning: #fab387;
+    --color-disabled: #f38ba8;
+
+    --color-bg: #1e1e2e;
+    --color-panel: #181825;
+    --color-bg-dark: #11111b;
+
+    --content-margin: 10vw;
+}
+
+.font-code {
+    font-family: code;
+}
+.font-glitch {
+    font-family: glitch;
+}
+.font-hw {
+    font-family: hw;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: var(--color-bg);
+    overflow: hidden;
+}
+
+body > div#content {
+    position: fixed;
+    top: calc(var(--topnav-height) + var(--topnav-border-width));
+    left: var(--content-margin);
+    width: calc(100% - var(--content-margin)*2);
+    min-height: calc(100% - (var(--topnav-height) + var(--topnav-border-width)));
+    overflow: hidden auto;
+}
+
+body > div#content > iframe#subsite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+* {
+    font-family: main;
+    color: var(--color-text);
+}
+
+span#copyright {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: small;
+    user-select: none;
+    color: rgba(255, 255, 255, .1);
+}

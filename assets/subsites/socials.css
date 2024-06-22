@@ -1,0 +1,14 @@
+.s-social > a {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin: 8px;
+}
+.s-social > a > img {
+    top: 0;
+    left: 0;
+    widows: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: main;
+    src: url(../style/comfortaa.ttf);
+}
+@font-face {
+    font-family: code;
+    src: url(../style/kodemono.ttf);
+}
+@font-face {
+    font-family: glitch;
+    src: url(../style/rubikglitch.ttf);
+}
+@font-face {
+    font-family: hw;
+    src: url(../style/kaushanscript.ttf);
+}
+
+:root {
+    --color-accent: #a6e3a1;
+    
+    --color-text: #cdd6f4;
+    --color-subtext: #6c7086;
+    --color-hover: #cba6f7;
+
+    --color-warning: #fab387;
+    --color-disabled: #f38ba8;
+
+    --color-bg: #1e1e2e;
+    --color-panel: #181825;
+    --color-bg-dark: #11111b;
+}
+
+.font-code {
+    font-family: code;
+}
+.font-glitch {
+    font-family: glitch;
+}
+.font-hw {
+    font-family: hw;
+}
+
+.abscenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.w100 {
+    width: 100%;
+}
+.text-align-center {
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    
+    background-color: var(--color-bg);
+    overflow: hidden;
+}
+
+* {
+    font-family: main;
+    color: var(--color-text);
+}

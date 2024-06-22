@@ -1,0 +1,25 @@
+table {
+    /* border-collapse: collapse; */
+
+    padding: 8px;
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+}
+
+th, td {
+    border-collapse: collapse;
+    border-bottom: 1px solid var(--color-accent);
+    padding-top: 16px;
+}
+tr:last-child > * {
+    border: none;
+}
+
+body > div.abscenter:nth-child(1) {
+    max-height: 90%;
+    overflow: hidden auto;
+}
+
+body > div.abscenter:nth-child(1)::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
